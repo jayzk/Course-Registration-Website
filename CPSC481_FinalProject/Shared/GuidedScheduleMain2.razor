@@ -593,15 +593,14 @@ else
                                 <span class="nonmobile">CPSC 449 <br>LEC 01 </span>
                             </div>
 
-                            @if (!CourseState.Courses["CPSC 449"].alternateLab
-                            && CourseState.Courses["CPSC 449"].checkedTime1 &&
+                            @if (!alternateCPSC449Lab && CourseState.Courses["CPSC 449"].checkedTime1 &&
                            (!CourseState.Courses["CPSC 449"].isBlocked1 && !CourseState.Courses["CPSC 449"].isBlocked2))
                             {
                                 <div class="time_block cpsc449" style="left: 60%; top: 58px; width: 20%; height: 65px;">
                                     <span class="nonmobile">CPSC 449 <br>TUT 01 </span>
                                 </div>
                             }
-                            else if (CourseState.Courses["CPSC 449"].alternateLab && CourseState.Courses["CPSC 449"].checkedTime2)
+                            else if (CourseState.Courses["CPSC 449"].checkedTime2)
                             {
                                 <div class="time_block cpsc449" style="left: 40%; top: 238px; width: 20%; height: 65px;">
                                     <span class="nonmobile">CPSC 449 <br>TUT 02 </span>
@@ -714,15 +713,6 @@ else
             <button type="button" class="btn btn-secondary" @onclick="HandleRightButtonClick">&rarr;</button>
         </div>
     </div>
-
-    <!--
-        <div style="padding-top: 10px;">
-            <EnrollmentPopup />
-        </div> -->
-        <!--
-            TO DELETE: CAN GET TERM STATE WITHIN HERE:
-            @termState.getTermState();
-        </div>-->
 
     <div style="text-align: center;">
         @if (termState.getTermState() == "Winter 2023")
@@ -878,8 +868,11 @@ else
         {
             possibilityValue = 2;
             alternateCPSC449Lab = true;
+
+            CourseState.Courses["CPSC 449"].isBlocked1 = true;
+            CourseState.Courses["CPSC 449"].isBlocked2 = true;
             CourseState.Courses["CPSC 449"].isFirstTime = false;
-            CourseState.Courses["CPSC 449"].alternateLab = true;
+
             CourseState.ForceUpdate();
         }
     }
@@ -889,8 +882,11 @@ else
         {
             possibilityValue = 1;
             alternateCPSC449Lab = false;
+
+            CourseState.Courses["CPSC 449"].isBlocked1 = false;
+            CourseState.Courses["CPSC 449"].isBlocked2 = false;
             CourseState.Courses["CPSC 449"].isFirstTime = true;
-            CourseState.Courses["CPSC 449"].alternateLab = false;
+
             CourseState.ForceUpdate();
         }
     }
