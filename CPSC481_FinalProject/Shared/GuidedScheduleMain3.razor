@@ -369,16 +369,6 @@ else{
                         </table>
                     </div>
                     <div class="weekTimes" style="position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
-                        <!--
-                        <div class="busy_blocks">
-                            <div class="thublock">
-                                <div class="busy_block" classname="busy_block" @onclick="@ToggleVisibility1" style="@($"opacity: {Visibility1};") left: 60%; top: 22px; width: 20%; height: 36px;"></div>
-                                <div class="busy_block" classname="busy_block" @onclick="@ToggleVisibility2" style="@($"opacity: {Visibility2};") left: 60%; top: 58px; width: 20%; height: 36px;"></div>
-                                <div class="busy_block" classname="busy_block" @onclick="@ToggleVisibility3" style="@($"opacity: {Visibility3};") left: 60%; top: 94px; width: 20%; height: 36px;"></div>
-                                <div class="busy_block" classname="busy_block" @onclick="@ToggleVisibility4" style="@($"opacity: {Visibility4};") left: 60%; top: 130px; width: 20%; height: 36px;"></div>
-                            </div>
-                        </div>-->
-
                         @*
 
                         // courses formatting guidelines
@@ -459,7 +449,7 @@ else{
                                 <span class="nonmobile">CPSC 449 <br>LEC 01 </span>
                             </div>
 
-                            @if (!alternateCPSC449Lab && CourseState.Courses["CPSC 449"].checkedTime1 &&
+                            @if (!CourseState.Courses["CPSC 449"].alternateLab && CourseState.Courses["CPSC 449"].checkedTime1 &&
                            (!CourseState.Courses["CPSC 449"].isBlocked1 && !CourseState.Courses["CPSC 449"].isBlocked2))
                             {
                                 <div class="time_block cpsc449" style="left: 60%; top: 58px; width: 20%; height: 65px;">

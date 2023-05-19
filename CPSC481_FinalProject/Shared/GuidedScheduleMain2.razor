@@ -593,7 +593,7 @@ else
                                 <span class="nonmobile">CPSC 449 <br>LEC 01 </span>
                             </div>
 
-                            @if (!alternateCPSC449Lab && CourseState.Courses["CPSC 449"].checkedTime1 &&
+                            @if (!CourseState.Courses["CPSC 449"].alternateLab && CourseState.Courses["CPSC 449"].checkedTime1 &&
                            (!CourseState.Courses["CPSC 449"].isBlocked1 && !CourseState.Courses["CPSC 449"].isBlocked2))
                             {
                                 <div class="time_block cpsc449" style="left: 60%; top: 58px; width: 20%; height: 65px;">
@@ -867,10 +867,8 @@ else
         if (CourseState.Courses["CPSC 449"].IsVisible == true && CourseState.selectedCourses.Contains(CourseList.GetCourse("CPSC 449")) && CourseState.Courses["CPSC 449"].checkedTime2 == true)
         {
             possibilityValue = 2;
-            alternateCPSC449Lab = true;
-
-            CourseState.Courses["CPSC 449"].isBlocked1 = true;
-            CourseState.Courses["CPSC 449"].isBlocked2 = true;
+            //alternateCPSC449Lab = true;
+            CourseState.Courses["CPSC 449"].alternateLab = true;
             CourseState.Courses["CPSC 449"].isFirstTime = false;
 
             CourseState.ForceUpdate();
@@ -881,13 +879,11 @@ else
         if (CourseState.Courses["CPSC 449"].IsVisible == true && CourseState.selectedCourses.Contains(CourseList.GetCourse("CPSC 449")) && CourseState.Courses["CPSC 449"].checkedTime2 == true)
         {
             possibilityValue = 1;
-            alternateCPSC449Lab = false;
-
-            CourseState.Courses["CPSC 449"].isBlocked1 = false;
-            CourseState.Courses["CPSC 449"].isBlocked2 = false;
+            //alternateCPSC449Lab = false;
+            CourseState.Courses["CPSC 449"].alternateLab = false;
             CourseState.Courses["CPSC 449"].isFirstTime = true;
 
-            CourseState.ForceUpdate();
+            CourseState.ForceUpdate();            
         }
     }
 
