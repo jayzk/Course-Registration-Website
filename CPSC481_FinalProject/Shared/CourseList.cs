@@ -65,7 +65,7 @@
                 Waitlist = "0/20",
                 TutSeats = "55/60",
                 TutWaitlist = "0/20",
-                Professor = "Robert Walker",
+                Professor = "Celia Hudson",
                 Location = "EEEL 121",
                 Description = @"Introduction to the development and evolution of software. Covers key conceptual foundations as well as key 
                             methods and techniques used in the different phases of the software lifecycle. Emphasis on both technical and 
@@ -90,7 +90,7 @@
                 Waitlist = "0/20",
                 TutSeats = "60/60",
                 TutWaitlist = "0/20",
-                Professor = "Matthew Taylor",
+                Professor = "Blake Landry",
                 Location = "SCI B 144",
                 Description = @"Fundamentals of modern astrophysics including observations and physical interpretation physical phenomena 
                             in the Universe. Topics include the nature of the Sun and stars, galaxies, and the interstellar medium; 
@@ -116,7 +116,7 @@
                 Waitlist = "0/20",
                 TutSeats = "28/30",
                 TutWaitlist = "0/20",
-                Professor = "Mostafa Mohamed",
+                Professor = "Kelly Oliver",
                 Location = "ST 141",
                 Description = @"Examination of the basic principles of the major programming language paradigms. 
                             Focus on declarative paradigms such as functional and logic programming. Data types, 
@@ -138,7 +138,7 @@
             CourseData c2 = new CourseData
             {
                 ID = 4,
-                Status = 3, //Enrolled status -
+                Status = 3, 
                 Number = "CPSC 481",
                 PureNumber = 481,
                 Title = "Human-Computer Interaction I",
@@ -146,7 +146,7 @@
                 Waitlist = "0/20",
                 TutSeats = "55/60",
                 TutWaitlist = "0/20",
-                Professor = "Ehud Sharlin",
+                Professor = "Blanche Harvey",
                 Location = "ENG E 239",
                 Description = @"Fundamental theory and practice of the design, implementation, and evaluation of human-computer interfaces. 
                             Topics include: principles of design; methods for evaluating interfaces with or without user involvement; 
@@ -169,7 +169,7 @@
                 Waitlist = "0/20",
                 TutSeats = "55/60",
                 TutWaitlist = "0/20",
-                Professor = "John Daniel Aycock",
+                Professor = "Mariam Mitchell",
                 Location = "MS 527",
                 Description = @"Learn the thought processes and techniques required to reverse engineer binary code and data, and 
                             how to apply those across different platforms using a variety of tools. This knowledge is useful across 
@@ -194,7 +194,7 @@
                 Waitlist = "0/20",
                 TutSeats = "55/60",
                 TutWaitlist = "0/20",
-                Professor = "Christopher Hugenholtz",
+                Professor = "Riya Peterson",
                 Location = "ENG G 60",
                 Description = @"Introduces mapping technologies and digital spatial data for solving geographical problems that focus 
                             on how to collect, manage, analyze, and communicate diverse spatial data. Topics include geographic information 
@@ -218,7 +218,7 @@
                 Waitlist = "0/20",
                 TutSeats = "55/60",
                 TutWaitlist = "0/20",
-                Professor = "Philip Langill",
+                Professor = "Andrew Hess",
                 Location = "ST 140",
                 Description = @"A comprehensive, descriptive overview of the universe outside the solar system. The electromagnetic spectrum; 
                             stellar spectra; distance determinations. Origin and evolution of stars; white dwarfs, neutron stars and black 
