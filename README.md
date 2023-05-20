@@ -6,19 +6,19 @@ The CoursEZ registration system offers the user with two distinct modes of enrol
 
 ## Avaliable courses
 - **CPSC 481: Human-Computer Interaction I**
-  - Professor: Ehud Sharlin
+  - Professor: Blanche Harvey
 - **CPSC 449: Programming Paradigms**
-  - Professor: Mostafa Mohamed
+  - Professor: Kelly Oliver
 - **CPSC 399: Reverse Engineering**
-  - Professor: John Daniel Aycock
+  - Professor: Mariam Mitchell
 - **GEOG 280: Thinking Spatially in a Digital World**
-  - Professor: Christopher Hugenholtz
+  - Professor: Riya Peterson
 - **ASTR 209: Introduction to Astronomy II - The Cosmos**
-  - Professor: Philip Langill
+  - Professor: Andrew Hess
 - **ASPH 305: Introduction to Astrophysics**
-  - Professor: Matthew Taylor
+  - Professor: Blake Landry
 - **SENG 300: Introduction to Software Engineering**
-  - Professor: Robert Walker
+  - Professor: Celia Hudson
 
 ## Implemented Functions and Features
 - Can select to go through guided or advanced mode
@@ -76,7 +76,7 @@ The functionality of these functions and feature have only been partially implem
    - On some monitors and screens, it may be necessary to zoom out in order to see all the components of the system due to the resolution being hardcoded
    - Unfortunately, no fix has been found for this issue at the moment
 
-## Guided mode walkthrough
+## Guided mode walkthrough and example
 
 ### Step 1: Select Courses
 1. In the starting page, click on "Guided" to get to the first step of guided mode
